@@ -1,10 +1,10 @@
 import { eq } from "drizzle-orm";
-import { getDb } from "../_lib/db";
-import { users } from "../_lib/schema";
-import { hashPassword, setAuthCookie, signToken } from "../_lib/auth";
-import { badRequest, methodNotAllowed, serverError } from "../_lib/http";
-import { registerSchema } from "../_lib/validation";
-import type { ApiRequest, ApiResponse } from "../_lib/http";
+import { getDb } from "../_lib/db.js";
+import { users } from "../_lib/schema.js";
+import { hashPassword, setAuthCookie, signToken } from "../_lib/auth.js";
+import { badRequest, methodNotAllowed, serverError } from "../_lib/http.js";
+import { registerSchema } from "../_lib/validation.js";
+import type { ApiRequest, ApiResponse } from "../_lib/http.js";
 
 export default async function handler(req: ApiRequest, res: ApiResponse) {
   if (req.method !== "POST") return methodNotAllowed(res, ["POST"]);

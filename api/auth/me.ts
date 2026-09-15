@@ -1,9 +1,9 @@
 import { eq } from "drizzle-orm";
-import { getDb } from "../_lib/db";
-import { users } from "../_lib/schema";
-import { getAuthUser } from "../_lib/auth";
-import { methodNotAllowed, serverError, unauthorized } from "../_lib/http";
-import type { ApiRequest, ApiResponse } from "../_lib/http";
+import { getDb } from "../_lib/db.js";
+import { users } from "../_lib/schema.js";
+import { getAuthUser } from "../_lib/auth.js";
+import { methodNotAllowed, serverError, unauthorized } from "../_lib/http.js";
+import type { ApiRequest, ApiResponse } from "../_lib/http.js";
 
 export default async function handler(req: ApiRequest, res: ApiResponse) {
   if (req.method !== "GET") return methodNotAllowed(res, ["GET"]);

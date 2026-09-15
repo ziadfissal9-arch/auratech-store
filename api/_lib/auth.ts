@@ -1,7 +1,7 @@
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
-import type { ApiRequest, ApiResponse } from "./http";
-import { unauthorized } from "./http";
+import type { ApiRequest, ApiResponse } from "./http.js";
+import { unauthorized } from "./http.js";
 
 const COOKIE_NAME = "auratech_token";
 const TOKEN_TTL_SECONDS = 60 * 60 * 24 * 7; // 7 days

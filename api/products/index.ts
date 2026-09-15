@@ -1,8 +1,8 @@
 import { and, asc, desc, eq, or, ilike } from "drizzle-orm";
-import { getDb } from "../_lib/db";
-import { products } from "../_lib/schema";
-import { methodNotAllowed, serverError } from "../_lib/http";
-import type { ApiRequest, ApiResponse } from "../_lib/http";
+import { getDb } from "../_lib/db.js";
+import { products } from "../_lib/schema.js";
+import { methodNotAllowed, serverError } from "../_lib/http.js";
+import type { ApiRequest, ApiResponse } from "../_lib/http.js";
 
 function firstParam(v: string | string[] | undefined): string | undefined {
   return Array.isArray(v) ? v[0] : v;

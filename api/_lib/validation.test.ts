@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { loginSchema, orderSchema, registerSchema } from "./validation";
+import { loginSchema, orderSchema, registerSchema } from "./validation.js";
 
 describe("registerSchema", () => {
   it("accepts a valid payload and normalizes the email", () => {

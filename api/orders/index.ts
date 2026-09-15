@@ -1,10 +1,10 @@
 import { desc, eq, inArray } from "drizzle-orm";
-import { getDb } from "../_lib/db";
-import { orderItems, orders, products } from "../_lib/schema";
-import { requireAuth } from "../_lib/auth";
-import { badRequest, methodNotAllowed, serverError } from "../_lib/http";
-import { orderSchema } from "../_lib/validation";
-import type { ApiRequest, ApiResponse } from "../_lib/http";
+import { getDb } from "../_lib/db.js";
+import { orderItems, orders, products } from "../_lib/schema.js";
+import { requireAuth } from "../_lib/auth.js";
+import { badRequest, methodNotAllowed, serverError } from "../_lib/http.js";
+import { orderSchema } from "../_lib/validation.js";
+import type { ApiRequest, ApiResponse } from "../_lib/http.js";
 
 const TAX_RATE = 0.08;
 const SHIPPING = 0;

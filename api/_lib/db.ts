@@ -1,6 +1,6 @@
 import { neon } from "@neondatabase/serverless";
 import { drizzle } from "drizzle-orm/neon-http";
-import * as schema from "./schema";
+import * as schema from "./schema.js";
 
 // Lazily initialized so importing this module never throws at build/bundle
 // time if DATABASE_URL isn't set yet (e.g. before the DB is provisioned).

@@ -1,8 +1,8 @@
 // Seeds the products table from the same catalog the frontend used to
 // import statically. Run with `npm run db:seed` after `npm run db:push`.
-import { getDb } from "../api/_lib/db";
-import { products as productsTable } from "../api/_lib/schema";
-import { products } from "../src/data";
+import { getDb } from "../api/_lib/db.js";
+import { products as productsTable } from "../api/_lib/schema.js";
+import { products } from "../src/data.js";
 
 async function main() {
   const db = getDb();

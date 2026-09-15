@@ -1,5 +1,5 @@
 import { beforeAll, describe, expect, it } from "vitest";
-import { hashPassword, signToken, verifyPassword, verifyToken } from "./auth";
+import { hashPassword, signToken, verifyPassword, verifyToken } from "./auth.js";
 
 beforeAll(() => {
   process.env.JWT_SECRET = "test-secret-do-not-use-in-production";

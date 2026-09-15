@@ -1,6 +1,6 @@
-import { clearAuthCookie } from "../_lib/auth";
-import { methodNotAllowed } from "../_lib/http";
-import type { ApiRequest, ApiResponse } from "../_lib/http";
+import { clearAuthCookie } from "../_lib/auth.js";
+import { methodNotAllowed } from "../_lib/http.js";
+import type { ApiRequest, ApiResponse } from "../_lib/http.js";
 
 export default function handler(req: ApiRequest, res: ApiResponse) {
   if (req.method !== "POST") return methodNotAllowed(res, ["POST"]);
