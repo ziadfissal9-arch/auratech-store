@@ -2,7 +2,7 @@
 
 A full-stack e-commerce storefront for audio and consumer electronics — headphones, earbuds, smartwatches, speakers and accessories. Built as a portfolio project to demonstrate production-grade engineering across the whole stack: a typed Postgres-backed API, real authentication, and a premium, accessible React front end.
 
-**Live demo:** _add your Vercel URL here_
+**Live demo:** [https://auratech-store.vercel.app](https://auratech-store.vercel.app)
 
 ![React](https://img.shields.io/badge/React-19-149eca?logo=react&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178c6?logo=typescript&logoColor=white)
